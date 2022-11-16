@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
     <link rel="stylesheet" type="text/css" href="styl7.css">
-
+    <script src="skrypt.js" defer></script>
 </head>
 <body>
    <header>
     <h2>Galeria miejsc ciekawych</h2>
    </header>
    <main>
-    <img src="lanzarotte.jpg" alt="galeria">
+    <img src="lanzarotte.jpg" alt="galeria" id="lanzar">
    </main>
    <section id="left">
     <h3>Przeglądaj zdjęcia</h3>
-    <img src="lanzarotte.jpg" alt="lanzarotte">
-    <img src="pekin.jpg" alt="pekin">
-    <img src="serengeti.jpg" alt="serengeti">
-    <img src="wenecja.jpg" alt="wenecja">
-    <img src="tajlandia.jpg" alt="tajlandia">
+    <img src="lanzarotte.jpg" id="1" alt="lanzarotte" onclick="openImg('lanzarotte.jpg')">
+    <img src="pekin.jpg" id="2" alt="pekin" onclick="openImg('pekin.jpg')">
+    <img src="serengeti.jpg" id="3" alt="serengeti" onclick="openImg('serengeti.jpg')">
+    <img src="wenecja.jpg" id="4" alt="wenecja" onclick="openImg('wenecja.jpg')">
+    <img src="tajlandia.jpg" id="5" alt="tajlandia" onclick="openImg('tajlandia.jpg')">
 
    </section> 
    <section id="right">
@@ -38,7 +38,7 @@
             <td>1</td>
         </tr>
     </table>
-    <p>Polub nas<img src='icon-off.png'></p>
+    <p>Polub nas<img src='icon-off.png' id='off' onclick="changeImg();"></p>
     <a href="https://pixabay.com" target="blank">Odkryj więcej zdjęć</a>
    </section> 
    <footer>
